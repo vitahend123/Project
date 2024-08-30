@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.parent-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+}
+
+.rectangle {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background: #7DB4E6;
+    justify-content: space-around;
+    flex-grow: 0;
+}
+
+.menu-item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 16px;
+}
+
+.menu-item-text {
+    font-family: 'Jomhuria';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+    margin-right: 8px;
+}
+
+.menu-item-icon {
+    height: 30px;
+    width: auto;
+}
+
+.menu-item-icon.one {
+    content: url('images/katze.png');    
+}
+
+.menu-item-icon.two {
+    content: url('images/cattt.png');    
+}
+
+.divider {
+    width: 2px; 
+    height: 100%; 
+    background-color: #413F99; 
+    margin: 0 20px;
+}
+
+.main {
+    display: flex;
+    height: 50%; 
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.cat-picture {
+    content: url(images/hauptkatze.png);
+    flex-grow: 1;
+    height: 100%;
+    max-height: none;
+    aspect-ratio: 1 / 4; 
+}
+
+.content {
+    flex-grow: 1; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 30px;
+    box-sizing: border-box; 
+    overflow: hidden;
+}
+
+.content-text {
+    font-size: 20px;
+    flex-grow: 1;
+}
+
+.content-email {
+    font-family: cursive;
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+.content-picture {
+    content: url('images/schlafendekatze.png');    
+    flex-grow: 1;
+    max-height: 100px;
+}
+
+.horizontal-divider {
+    width: 100%; 
+    height: 20px; 
+    background-color: #6677D5;     
+}
+
+.kotjata {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.kotjonok {
+    flex: 1;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.kotjonok:nth-child(1) {
+    background-image: url('images/firstcat.png');
+}
+
+.kotjonok:nth-child(2) {
+    background-image: url('images/secondcat.png');
+}
+
+.kotjonok:nth-child(3) {
+    background-image: url('images/thirdcat.png');
+}
+
+.kotjonok:nth-child(4) {
+    background-image: url('images/fourthcat.png');
+}
